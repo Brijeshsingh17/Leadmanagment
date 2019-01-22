@@ -1,0 +1,11 @@
+<br><h2 style="text-align:center; color: #3F51B5">Role</h2><br>
+<div style="border:solid; border-color : #3F51B5; margin-left: 3%; margin-right: 3%; background-color: azure">
+
+  <mat-form-field class="role">
+    <input matInput [(ngModel)]="role" placeholder="Employee Role" >
+  </mat-form-field>
+  <div style="text-align:right">
+    <button mat-flat-button (click)="goBack()" class="cancle" >cancle</button>
+  <button mat-flat-button  class="submitButton" (click)="onSubmit()" color="primary">submit</button>
+  </div><br>
+</div>

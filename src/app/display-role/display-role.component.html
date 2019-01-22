@@ -1,0 +1,16 @@
+<br><button mat-flat-button class="newButton" routerLink="/newRole" color="primary">New Role</button>
+<h2 style="text-align:center; color: #3F51B5">Role Table</h2>
+
+
+
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+ 
+  <ng-container matColumnDef="Role">
+    <th mat-header-cell *matHeaderCellDef>Role </th>
+    <td mat-cell *matCellDef="let element">  {{element.role}} </td>
+  </ng-container>
+       
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>

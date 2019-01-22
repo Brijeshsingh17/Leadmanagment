@@ -1,0 +1,108 @@
+.leadRef{
+    width:89%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.date{
+    width:42%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.name{
+    width: 42%;
+    margin-right: 5%;
+}
+
+.mobilenumber{
+    width:42%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.alterNateMobileNo{
+    width: 42%;
+    margin-right: 5%;
+}
+
+.email{
+    width:89%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.address{
+    width:89%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.city{
+    width:42%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.state{
+    width:42%;
+    margin-right: 5%;
+}
+
+.example-h2{
+    width:42%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.cancle{
+    background-color: red;
+    color: black;
+    margin-right: 5%;
+
+}
+
+
+.submitButton{
+  
+    color: black;
+    margin-right: 5%;
+
+}
+
+  
+  .example-section {
+     display: flex; 
+    align-content: center;
+    align-items: center;
+    height: 60px;
+    
+  }
+  
+  .example-margin {
+   
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .contactType
+{
+    margin-left: 5%;
+    margin-right: 5%;
+  
+} 
+.example-full-width {
+    width: 70%;
+    margin-left: 5%;
+    margin-right: 5%;
+  } 
+  .leadId{
+    width:42%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.employee{
+    width: 42%;
+    margin-right: 5%;
+}
+ 
+

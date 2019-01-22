@@ -1,0 +1,23 @@
+.cancle{
+    background-color: red;
+    color: black;
+    margin-right: 5%;
+
+}
+
+.submitButton{
+    
+    color: white;
+    margin-right: 5%;
+
+}
+.product_name{
+    width: 82%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.product_dis{
+    width: 82%;
+    margin-right: 5%;
+    margin-left: 5%;
+}

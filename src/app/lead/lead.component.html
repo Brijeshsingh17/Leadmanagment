@@ -1,0 +1,83 @@
+<br><h2 style="text-align:center; color:#3F51B5">New Lead</h2><br>
+
+
+<div style="border:solid; border-color : #3F51B5; margin-left: 3%; margin-right: 3%; background-color: azure">
+  <mat-form-field class="leadRef">
+    <input matInput placeholder="Lead Ref." [(ngModel)]= "leadRefrence">
+  </mat-form-field> 
+  <mat-form-field class="name">
+    <input matInput [(ngModel)]="name" placeholder="Name" >
+  </mat-form-field> <br>
+  <!-- <mat-form-field class="leadRef">
+      <mat-select placeholder="employeeName"[(ngModel)]="employeeName" >
+      <mat-option *ngFor="let emps of employeeDetails " value="{{emps.employeeName}}">{{emps.employeeName}}</mat-option>
+      </mat-select>
+      </mat-form-field> -->
+  
+      <!-- <mat-form-field class="employee">
+        <mat-select placeholder="employeeId"[(ngModel)]="employeeId" >
+        <mat-option *ngFor="let emp of employeeDetails" value="{{emp.employeeId}}">{{emp.employeeName}}-(EmpId-{{emp.employeeId}})</mat-option>
+        </mat-select>
+        </mat-form-field><br> -->
+ 
+
+  <!-- <mat-form-field class="date">
+    <input matInput [matDatepicker]="picker" [(ngModel)]="date" placeholder="Date">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field> -->
+
+ 
+  
+  <mat-form-field class="mobilenumber">
+    <span matPrefix>+91  &nbsp;</span>
+    <input type="tel" matInput [(ngModel)]="mobileNo" maxlength="10" minlength="10" only_numbers placeholder="MobileNumber">
+  </mat-form-field>
+
+  <mat-form-field class="alterNateMobileNo">
+    <span matPrefix>+91  &nbsp;</span>
+    <input type="tel" matInput [(ngModel)]="alternateMobileNo" maxlength="10" minlength="10" only_numbers placeholder="AlterNate MobileNo">
+  </mat-form-field><br>
+
+  <mat-form-field class="email">
+    <input matInput [(ngModel)]="email" placeholder="Email" >
+  </mat-form-field><br>
+              
+<mat-form-field class="address">
+<input matInput [(ngModel)]="address" placeholder="Address" >
+</mat-form-field><br>
+
+<mat-form-field class="city">
+  <input matInput [(ngModel)]="city" placeholder="City" >
+  </mat-form-field>
+
+  <mat-form-field class="state">
+    <input matInput [(ngModel)]="state" placeholder="State" >
+    </mat-form-field><br>
+
+    <mat-card-content>
+      <h3 class="example-h2">Interested In</h3>
+      <!-- <section class="example-section"> -->
+        <mat-checkbox  class="example-margin"  [(ngModel)]="mutual">Mutual Fund</mat-checkbox>
+        <mat-checkbox  class="example-margin"    [(ngModel)]="insurance">Insurance</mat-checkbox>
+       
+      <!-- </section> -->
+    </mat-card-content>
+    <!-- <mat-form-field class="employee">
+        <mat-select placeholder="employeeName-EmployeeId & "[(ngModel)]="employeeId" >
+        <mat-option *ngFor="let emp of employeeDetails" value="{{emp.employeeId}}">{{emp.employeeName}}-(EmpId-{{emp.employeeId}})</mat-option>
+        </mat-select>
+        </mat-form-field><br> -->
+   
+
+    <div style="text-align:right">
+      <button mat-flat-button (click)="goBack()" class="cancle">cancle</button>
+      <button mat-flat-button  class="submitButton" (click)="onSubmit()" routerLink="/home">submit</button>
+    </div><br>
+
+ </div>
+
+
+
+
+ 

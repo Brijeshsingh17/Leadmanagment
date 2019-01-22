@@ -1,0 +1,127 @@
+<br>
+<h2 style="text-align:center; color: red">Follow-up</h2><br>
+
+<div style="border:solid; border-color : black; margin-left: 3%; margin-right: 3%; background-color: azure">
+  <mat-form-field class="leadId">
+ 
+    <input type="tel" matInput [(ngModel)]="leadId"  placeholder="leadId">
+  </mat-form-field>
+  <mat-form-field class="employee">
+  
+    <input type="tel" matInput [(ngModel)]="employeeId"  placeholder="employeedId">
+  </mat-form-field>
+ <br>
+
+  <mat-form-field class="leadRef">
+    <input matInput placeholder="Lead Ref." [(ngModel)]="leadRefrence" >
+  </mat-form-field> <br>
+
+
+  <mat-form-field class="date">
+    <input matInput [matDatepicker]="picker" [(ngModel)]="date" placeholder="Date">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+
+  <mat-form-field class="name">
+    <input matInput [(ngModel)]="name" placeholder="Name" >
+  </mat-form-field> <br>
+  
+  <mat-form-field class="mobilenumber">
+    <span matPrefix>+91  &nbsp;</span>
+    <input type="tel" matInput [(ngModel)]="mobileNo" maxlength="10" minlength="10" only_numbers placeholder="MobileNumber">
+  </mat-form-field>
+
+  <mat-form-field class="alterNateMobileNo">
+    <span matPrefix>+91  &nbsp;</span>
+    <input type="tel" matInput [(ngModel)]="alternateMobileNo" maxlength="10" minlength="10" only_numbers placeholder="AlterNate MobileNo">
+  </mat-form-field><br>
+
+  <mat-form-field class="email">
+    <input matInput [(ngModel)]="email" placeholder="Email" >
+  </mat-form-field><br>
+              
+<mat-form-field class="address">
+<input matInput [(ngModel)]="address" placeholder="Address" >
+</mat-form-field><br>
+
+<mat-form-field class="city">
+  <input matInput [(ngModel)]="city" placeholder="City" >
+  </mat-form-field>
+
+  <mat-form-field class="state">
+    <input matInput [(ngModel)]="state" placeholder="State" >
+    </mat-form-field><br>
+
+    <mat-card-content  >
+      <h3 class="example-h2">Interested In</h3>
+      <input matInput [(ngModel)]="interestedIn" placeholder="interestedIn" class="city" > <br>
+     
+    </mat-card-content>
+    <br>
+
+    <!-- <div style="text-align:right">
+      <button mat-flat-button (click)="goBack()" class="cancle">cancle</button>
+    <button mat-flat-button  class="submitButton">submit</button>
+    </div><br> -->
+
+    <mat-form-field class="contactType">
+      <select matNativeControl placeholder="Contact Type" [(ngModel)]="contactType" >
+        <option >Phone</option>
+        <option >Personally</option>
+        <option >Email</option>
+        <option >SMS</option>
+      </select>
+    </mat-form-field><br>
+    
+    <mat-form-field class="example-full-width">
+      <textarea matInput placeholder="Discussion Details"></textarea>
+    </mat-form-field>
+    <mat-form-field class="contactType">
+      <select matNativeControl placeholder="OUTPUT" [(ngModel)]="select" >
+        <option>closed</option>
+        <option>needToFollow</option>
+        <option>done</option>
+       
+      </select>
+    </mat-form-field><br>
+    <div *ngIf="select === 'closed'">
+        <mat-form-field class="example-full-width">
+            <textarea matInput placeholder="Reason" [(ngModel)]="reason"></textarea>
+          </mat-form-field>
+          </div>
+          <div *ngIf="select === 'needToFollow'">
+              <mat-form-field class="date">
+                  <input matInput [matDatepicker]="picker" [(ngModel)]="nextDate" placeholder="next Follow Up Date">
+                  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                  <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+                <mat-checkbox class="example-margin" [(ngModel)]="Alert">ALERT on/off</mat-checkbox>
+                </div>
+                <div *ngIf="select === 'done'">
+                 
+                  <mat-form-field class="leadRef">         
+                      <input matInput placeholder="CUSTOMER NO" type="number" [(ngModel)]="custumerNo">
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width">
+                      <mat-select placeholder="product"[(ngModel)]="product" >
+                      <mat-option *ngFor="let product of    this.productDetails" value="{{product.Name}}">{{product.productName}}-{{product.productDescription}}</mat-option>
+                      </mat-select>
+                      </mat-form-field>
+                </div>
+           <br>
+            <div style="text-align:right">
+      <button mat-flat-button (click)="goBack()" class="cancle">cancle</button>
+      <button mat-flat-button  class="submitButton" (click)="onSubmit()"  color="primary">submit</button>
+    </div><br>
+     
+   
+    
+
+  </div>
+
+
+
+
+
+ 

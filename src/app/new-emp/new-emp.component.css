@@ -1,0 +1,72 @@
+.leadRef{
+    width:42%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.name{
+    width: 42%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.email{
+    width:40%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.password{
+    width:40%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+.mobilenumber{
+    width:42%;
+    margin-right: 5%;
+}
+
+
+
+.address{
+    width:89%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.city{
+    width:42%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.state{
+    width:42%;
+    margin-right: 5%;
+}
+.role{
+    width:42%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.teamLead{
+    width:42%;
+    margin-right: 5%;
+}
+
+.cancle{
+    background-color: red;
+    color: black;
+    margin-right: 5%;
+
+}
+
+.submitButton{
+    background-color: #3F51B5;
+    color: white;
+    margin-right: 5%;
+
+}
+  
+ 
+

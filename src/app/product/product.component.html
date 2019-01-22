@@ -1,0 +1,14 @@
+<br><h2 style="text-align:center; color: #3F51B5">Product</h2><br>
+
+<div style="border:solid; border-color : #3F51B5; margin-left: 3%; margin-right: 3%; background-color: azure">
+<mat-form-field class="product_name">
+  <input matInput [(ngModel)]="productName"  placeholder="product Name" >
+</mat-form-field><br>
+<mat-form-field class="product_dis">
+  <input matInput [(ngModel)]="productDescription"  placeholder="product discription" >
+</mat-form-field> 
+<div style="text-align:right">
+<button mat-flat-button (click)="goBack()" class="cancle" >back</button>
+<button mat-flat-button  class="submitButton" (click)="onSubmit()" color="primary">submit</button>
+</div><br>
+</div>

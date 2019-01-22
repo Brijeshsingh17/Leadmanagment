@@ -1,0 +1,18 @@
+.role{
+    width: 82%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.cancle{
+    background-color: red;
+    color: black;
+    margin-right: 5%;
+
+}
+
+.submitButton{
+   
+    color:white;
+    margin-right: 5%;
+
+}

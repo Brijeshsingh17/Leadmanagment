@@ -1,0 +1,60 @@
+<br><h2 style="text-align:center; color:#3F51B5">New Employee</h2><br>
+
+
+<div style="border:solid; border-color : #3F51B5; margin-left: 3%; margin-right: 3%; background-color: azure">
+
+
+
+
+<mat-form-field class="name">
+  <input matInput [(ngModel)]="employeeName"  placeholder="Employee Name" >
+</mat-form-field> <mat-form-field class="mobilenumber">
+  <span matPrefix>+91  &nbsp;</span>
+  <input type="tel" matInput [(ngModel)]="mobileNo" maxlength="10" minlength="10" only_numbers placeholder="MobileNumber">
+</mat-form-field><br>
+
+<mat-form-field class="password">
+  <input matInput [(ngModel)]="password" placeholder="password" >
+</mat-form-field>
+
+<mat-form-field class="email">
+  <input matInput [(ngModel)]="email" placeholder="Email" >
+</mat-form-field> <br>
+
+
+         
+<mat-form-field class="address">
+<input matInput [(ngModel)]="address" placeholder="Address" >
+</mat-form-field><br>
+
+<mat-form-field class="city">
+<input matInput [(ngModel)]="city" placeholder="City" >
+</mat-form-field>
+
+<mat-form-field class="state">
+  <input matInput [(ngModel)]="state" placeholder="State" >
+  </mat-form-field><br>
+  <mat-form-field class="role">
+    <mat-select placeholder="Role"[(ngModel)]="role" >
+    <mat-option *ngFor="let rolename of roles" value="{{rolename.role}}">{{rolename.role}}</mat-option>
+    </mat-select>
+    </mat-form-field>
+
+    <mat-form-field class="teamLead">
+      <mat-select placeholder="Team Lead"[(ngModel)]="teamLead" >
+      <mat-option *ngFor="let teamLead of employeeDetails" value="{{teamLead.employeeName}}">{{teamLead.employeeName}}</mat-option>
+      </mat-select>
+      </mat-form-field><br>
+
+  <div style="text-align:right">
+    <button mat-flat-button (click)="goBack()" class="cancle">cancle</button>
+  <button mat-flat-button  class="submitButton" (click)="onSubmit()">submit</button>
+  </div><br>
+  </div>
+
+
+
+
+
+
+

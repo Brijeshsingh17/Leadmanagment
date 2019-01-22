@@ -1,0 +1,27 @@
+<br>
+<div style="border:solid; border-color :#3F51B5; size:45px; margin-left: 30%;margin-right: 30%;background-color: rgb(240, 238, 238);"  >
+  <h2 style="text-align:center"  >
+  Login
+  </h2>
+    
+        <mat-form-field class="mobilenumber">
+          <span matPrefix>+91  &nbsp;</span>
+          <input type="tel" matInput [(ngModel)]="mobileNo" maxlength="10" minlength="10" only_numbers placeholder="MobileNumber">
+        </mat-form-field>
+
+  
+
+ 
+
+    
+    <mat-form-field class="mobilenumber">
+      <input matInput [(ngModel)]="password"  placeholder="password"type="password">
+    </mat-form-field>
+
+   
+<div style="text-align:center">
+    <button mat-flat-button (click)="onClick()" class="login" > SIGN IN</button>
+   
+    </div><br>
+  </div>
+
